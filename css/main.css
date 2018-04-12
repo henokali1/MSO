@@ -1,0 +1,58 @@
+.card {
+  width: 200%;
+}
+
+a:link {
+  color: white;
+  cursor: auto;
+}
+
+#my-div {
+  background-color: #f00;
+  width: 200px;
+  height: 200px;
+}
+a.fill-div {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+}
+
+#r1 {
+  margin-top: 24px;
+  border: 1px solid lightgray;
+  margin-bottom: 0px;
+}
+
+.row {
+  margin-bottom: 0px;
+  border: 1px solid lightgray;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.chip {
+  float: right !important;
+}
+
+#table_chip {
+  float: left !important;
+}
+
+#modal_row {
+  margin-top: 24px;
+  border: 1px solid lightgray;
+  margin-bottom: 0px;
+}
+
+table {
+  margin: 24px;
+  margin-right: 24px;
+}
+
+.modal {
+  width: 75% !important ;
+}
