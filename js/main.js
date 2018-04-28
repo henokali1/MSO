@@ -31,13 +31,17 @@ $(document).ready(function() {
 });
 
 $('.approve').click(function(e) {
-  Materialize.toast('Approved', 3000);
-  e.preventDefault();
   // Hide row
   var divId = $(this)
     .parents('.mso_row')
     .attr('id');
 
-  console.log(divId);
+  var msoNumber = $(this)
+    .parent()
+    .children('.badge')
+    .text();
+
+  Materialize.toast(msoNumber + ' Approved!', 3000);
+  e.preventDefault();
   $('#' + divId).toggle(1000, 'swing', function() {});
 });
