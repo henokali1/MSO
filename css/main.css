@@ -25,7 +25,7 @@ a.fill-div {
   margin-bottom: 0px;
 }
 
-.row {
+.mso_row {
   margin-bottom: 0px;
   border: 1px solid lightgray;
 }
@@ -56,3 +56,15 @@ table {
 .modal {
   width: 75% !important ;
 }
+
+/* #approve_a {
+  margin-top: 2%;
+}
+
+#deny_a {
+  margin-top: 2%;
+}
+
+#read_more_a {
+  margin-top: 2%;
+} */

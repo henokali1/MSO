@@ -33,4 +33,11 @@ $(document).ready(function() {
 $('.approve').click(function(e) {
   Materialize.toast('Approved', 3000);
   e.preventDefault();
+  // Hide row
+  var divId = $(this)
+    .parents('.mso_row')
+    .attr('id');
+
+  console.log(divId);
+  $('#' + divId).toggle(1000, 'swing', function() {});
 });
