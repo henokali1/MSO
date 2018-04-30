@@ -23,14 +23,47 @@
 </head>
 
 <body>
-    <div class="container">
-        <a href="man_sup_view.html">Manager/Supervisor</a>
+    <div class="navbar-fixed">
+        <nav class="black">
+            <div class="nav-wrapper">
+                <div class="container">
+                    <!-- RESPONSIVE WITH SIDE MENU -->
+                    <a href="#" class="brand-logo">
+                        FIA Logo
+                        <!-- <img src="img/favicon.png" alt="navbar_logo not found"> -->
+                    </a>
+                    <a class="button-collapse" data-activates="mobile-nav" href="#">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li>
+                            <a href="man_sup_view.html">Approve MSO's</a>
+                        </li>
+
+                        <!-- BUTTON LINK -->
+                        <li>
+                            <a class="btn waves-effect waves-light">Login</a>
+                        </li>
+                        <!-- ICON LINK -->
+                        <li>
+                            <a href="#">
+                                <i class="material-icons">person</i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="side-nav" id="mobile-nav">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </div>
-    <div class="row">
-        <div class="col s12">
-            <h1 class="center-align">MSO Form</h1>
-        </div>
-    </div>
+
     <div class="container">
         <div class="card-panel grey lighten-4 grey-text text-darken-4 z-depth-0">
             <form>
@@ -256,6 +289,10 @@
 
         });
     </script>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

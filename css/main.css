@@ -19,12 +19,6 @@ a.fill-div {
   text-decoration: none;
 }
 
-#r1 {
-  margin-top: 24px;
-  border: 1px solid lightgray;
-  margin-bottom: 0px;
-}
-
 .mso_row {
   margin-bottom: 0px;
   border: 1px solid lightgray;
@@ -57,14 +51,8 @@ table {
   width: 75% !important ;
 }
 
-/* #approve_a {
-  margin-top: 2%;
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-#deny_a {
-  margin-top: 2%;
-}
-
-#read_more_a {
-  margin-top: 2%;
-} */

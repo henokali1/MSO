@@ -2,21 +2,46 @@ $('.modal').modal({
   dismissible: true,
   inDuration: 300,
   outDuration: 200,
-  ready: function(modal, trigger) {
-    console.log('Modal Opened', modal, trigger);
-  }
+  ready: function(modal, trigger) {}
 });
 
 $('deny_modal').modal({
   dismissible: true,
   inDuration: 300,
   outDuration: 200,
-  ready: function(modal, trigger) {
-    console.log('Modal Opened', modal, trigger);
-  }
+  ready: function(modal, trigger) {}
 });
 
 $(document).ready(function() {
+  $('.dropdown-button').dropdown({
+    constrainWidth: false,
+    hover: true,
+    belowOrigin: true,
+    alignment: 'left'
+  });
+
+  // JAVASCRIPT START HERE //
+
+  // INIT DATEPICKER
+  $('.datepicker').pickadate({
+    selectMonths: true,
+    selectYears: 40,
+    closeOnSelect: true
+  });
+
+  // INIT TIMEPICKER
+  $('.timepicker').pickatime({
+    default: 'now',
+    twelvehour: true,
+    donetext: 'ok',
+    cleartext: 'clear',
+    canceltext: 'cancel',
+    autoclose: true
+  });
+
+  // INIT SELECT LIST
+  $('select').material_select();
+
   $('a').hover(function() {
     $(this).css('cursor', 'pointer');
   });
@@ -28,6 +53,16 @@ $(document).ready(function() {
     // $(this).css('cursor', 'pointer');
     $(this).toggleClass('z-depth-5');
   });
+
+  $('#comment_modal').click(function() {
+    console.log('Modal Comment Clicke');
+  });
+
+  $('#cancel_modal').click(function() {
+    console.log('Modal Cancel Clicked');
+  });
+
+  $('.button-collapse').sideNav();
 });
 
 $('.approve').click(function(e) {

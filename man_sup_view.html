@@ -15,9 +15,47 @@
 </head>
 
 <body link="white">
-    <div class="container">
-        <a href="index.html">MSO Form</a>
+    <div class="navbar-fixed">
+        <nav class="black">
+            <div class="nav-wrapper">
+                <div class="container">
+                    <!-- RESPONSIVE WITH SIDE MENU -->
+                    <a href="#" class="brand-logo">
+                        FIA Logo
+                        <!-- <img src="img/favicon.png" alt="navbar_logo not found"> -->
+                    </a>
+                    <a class="button-collapse" data-activates="mobile-nav" href="#">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li>
+                            <a href="index.html">MSO Form</a>
+                        </li>
+
+                        <!-- BUTTON LINK -->
+                        <li>
+                            <a class="btn waves-effect waves-light">Login</a>
+                        </li>
+                        <!-- ICON LINK -->
+                        <li>
+                            <a href="#">
+                                <i class="material-icons">person</i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="side-nav" id="mobile-nav">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </div>
+
     <div class="container">
         <div class="row mso_row" id="r1">
             <div class="col s12">
@@ -167,7 +205,8 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Comment</a>
+                <a id="comment_modal" href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Comment</a>
+                <a id="cancel_modal" href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
             </div>
         </div>
 
@@ -243,6 +282,36 @@
                 <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
             </div>
         </div>
+
+        <!-- PAGINATION -->
+        <ul class="pagination">
+            <li class="disabled">
+                <a href="#!">
+                    <i class="material-icons">chevron_left</i>
+                </a>
+            </li>
+            <li class="waves-effect">
+                <a href="#!">1</a>
+            </li>
+            <li class="waves-effect active">
+                <a href="#!">2</a>
+            </li>
+            <li class="waves-effect">
+                <a href="#!">3</a>
+            </li>
+            <li class="waves-effect">
+                <a href="#!">4</a>
+            </li>
+            <li class="waves-effect">
+                <a href="#!">5</a>
+            </li>
+            <li class="waves-effect">
+                <a href="#!">
+                    <i class="material-icons">chevron_right</i>
+                </a>
+            </li>
+        </ul>
+
     </div>
 
     <!--Import jQuery before materialize.js-->
