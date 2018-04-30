@@ -22,6 +22,17 @@ $(document).ready(function() {
 
   // JAVASCRIPT START HERE //
 
+  $('.button-collapse').sideNav();
+
+  $('.dropdown-button').dropdown({
+    constrainWidth: false,
+    hover: true,
+    belowOrigin: true,
+    alignment: 'left'
+  });
+
+  // JAVASCRIPT START HERE //
+
   // INIT DATEPICKER
   $('.datepicker').pickadate({
     selectMonths: true,
@@ -45,7 +56,7 @@ $(document).ready(function() {
   $('a').hover(function() {
     $(this).css('cursor', 'pointer');
   });
-  $('.row').hover(function() {
+  $('.mso_row').hover(function() {
     // $(this).css('cursor', 'pointer');
     $(this).toggleClass('z-depth-5');
   });
@@ -61,8 +72,6 @@ $(document).ready(function() {
   $('#cancel_modal').click(function() {
     console.log('Modal Cancel Clicked');
   });
-
-  $('.button-collapse').sideNav();
 });
 
 $('.approve').click(function(e) {

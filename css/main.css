@@ -56,3 +56,9 @@ table {
   align-items: center;
   justify-content: center;
 }
+
+.box {
+  background: #f4f4f4;
+  padding: 10px;
+  text-align: left;
+}

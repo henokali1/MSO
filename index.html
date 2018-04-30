@@ -11,58 +11,37 @@
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <style>
-        .box {
-            background: #f4f4f4;
-            padding: 10px;
-            text-align: left;
-        }
-    </style>
+
     <!-- TITLE -->
     <title>MSO Form</title>
 </head>
 
 <body>
-    <div class="navbar-fixed">
-        <nav class="black">
-            <div class="nav-wrapper">
-                <div class="container">
-                    <!-- RESPONSIVE WITH SIDE MENU -->
-                    <a href="#" class="brand-logo">
-                        FIA Logo
-                        <!-- <img src="img/favicon.png" alt="navbar_logo not found"> -->
-                    </a>
-                    <a class="button-collapse" data-activates="mobile-nav" href="#">
-                        <i class="material-icons">menu</i>
-                    </a>
-                    <ul class="right hide-on-med-and-down">
-                        <li>
-                            <a href="man_sup_view.html">Approve MSO's</a>
-                        </li>
 
-                        <!-- BUTTON LINK -->
-                        <li>
-                            <a class="btn waves-effect waves-light">Login</a>
-                        </li>
-                        <!-- ICON LINK -->
-                        <li>
-                            <a href="#">
-                                <i class="material-icons">person</i>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="side-nav" id="mobile-nav">
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
-                        <li>
-                            <a href="#">Login</a>
-                        </li>
-                    </ul>
-                </div>
+    <!-- RESPONSIVE WITH SIDE MENU -->
+    <nav class="blue darken-4">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo">Logo</a>
+                <a class="button-collapse" data-activates="mobile-nav" href="#">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li>
+                        <a href="man_sup_view.html">Approve MSO's</a>
+                    </li>
+
+                </ul>
+                <ul class="side-nav" id="mobile-nav">
+                    <li>
+                        <a href="man_sup_view.html">Approve MSO's</a>
+                    </li>
+
+                </ul>
             </div>
-        </nav>
-    </div>
+        </div>
+    </nav>
+
 
     <div class="container">
         <div class="card-panel grey lighten-4 grey-text text-darken-4 z-depth-0">
@@ -254,41 +233,6 @@
     <!-- CK Editor CDN -->
     <script src="https://cdn.ckeditor.com/4.8.0/standard/ckeditor.js"></script>
 
-
-    <script>
-        $(document).ready(function () {
-            $('.dropdown-button').dropdown({
-                constrainWidth: false,
-                hover: true,
-                belowOrigin: true,
-                alignment: 'left'
-            });
-
-            // JAVASCRIPT START HERE //
-
-            // INIT DATEPICKER
-            $('.datepicker').pickadate({
-                selectMonths: true,
-                selectYears: 40,
-                closeOnSelect: true
-            });
-
-            // INIT TIMEPICKER
-            $('.timepicker').pickatime({
-                default: 'now',
-                twelvehour: true,
-                donetext: 'ok',
-                cleartext: 'clear',
-                canceltext: 'cancel',
-                autoclose: true
-            });
-
-            // INIT SELECT LIST
-            $('select').material_select();
-
-
-        });
-    </script>
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
