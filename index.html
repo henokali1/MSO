@@ -19,29 +19,28 @@
 
 <body>
 
-    <!-- RESPONSIVE WITH SIDE MENU -->
-    <nav class="blue darken-4">
-        <div class="container">
-            <div class="nav-wrapper">
+    <header>
+        <div class="navbar-fixed">
+            <nav class="blue darken-4" <div class="nav-wrapper">
                 <a href="#" class="brand-logo">Logo</a>
-                <a class="button-collapse" data-activates="mobile-nav" href="#">
+                <a href="#" data-activates="mobile-demo" class="button-collapse">
                     <i class="material-icons">menu</i>
                 </a>
                 <ul class="right hide-on-med-and-down">
                     <li>
                         <a href="man_sup_view.html">Approve MSO's</a>
                     </li>
-
                 </ul>
-                <ul class="side-nav" id="mobile-nav">
-                    <li>
-                        <a href="man_sup_view.html">Approve MSO's</a>
-                    </li>
-
-                </ul>
-            </div>
         </div>
-    </nav>
+        </nav>
+        </div>
+        <!-- Move the sidenav outside of .navbar-fixed -->
+        <ul class="side-nav" id="mobile-demo">
+            <li>
+                <a href="man_sup_view.html">Approve MSO's</a>
+            </li>
+        </ul>
+    </header>
 
 
     <div class="container">
