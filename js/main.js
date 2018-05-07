@@ -85,7 +85,7 @@ $('.approve').click(function(e) {
     .children('.badge')
     .text();
 
-  Materialize.toast(msoNumber + ' Approved!', 3000);
+  Materialize.toast(msoNumber + ' Approved!', 5000);
   e.preventDefault();
   $('#' + divId).toggle(1000, 'swing', function() {});
 });
